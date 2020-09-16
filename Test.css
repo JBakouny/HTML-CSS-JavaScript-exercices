@@ -12,5 +12,5 @@ h3 , p {
     font-family: 'Lucida Sans', sans-serif;
 }
 
-div.RedItalic h3 {background-color: cyan;}
+div.RedItalic h3:hover {background-color: cyan;}
 
