@@ -5,7 +5,10 @@ body {background-color:yellow}
 
 .RedItalic {font-style: italic; color: red;}
 
-h3 , p {font-family: 'Lucida Sans', sans-serif;}
+h3 , p {
+    color: green; 
+    font-family: 'Lucida Sans', sans-serif;
+}
 
 div.RedItalic h3 {background-color: cyan;}
 
