@@ -5,6 +5,8 @@ body {background-color:yellow}
 
 .RedItalic {font-style: italic; color: red;}
 
+.Times {font-family: 'Times New Roman', Times, serif;}
+
 h3 , p {
     color: green; 
     font-family: 'Lucida Sans', sans-serif;
