@@ -4,12 +4,12 @@
     <head>
         <title>My First Web Page - Avec changements</title>
 
-        <link rel="stylesheet" href="Test.css"/ type="text/css"> 
-        <!-- script src="Test.js"/ -->
+        <link rel="stylesheet" href="Test.css"/ type="text/css">
+        <script src="Test.js"> </script>
     </head>
 
     <!-- la section body contient la page HTML comme on la visualise dans le browser -->
-    <body>
+    <body onload="writeName()">
 
         <h1 class = "RedItalic Times"> The Big Title</h1>
 
@@ -21,6 +21,25 @@
         <p> Click <a href="Another.html">here</a> to another web page </p>
         <h3 > The Mean Stack</h3>
         <img src="mean stack.png" width="300">
+
+        <form action="http://localhost:3000/"
+        method="post">
+          <p>Please fill in the following information:</p>
+    
+          <fieldset>
+            <legend>Name</legend>
+            <label for="firstname">First name:</label>
+            <input type="text" id="firstname" name="firstname" value="Jean-Paul" autofocus>
+            <br>
+            <label for="lastname_id">Last name:</label>
+            <input type="text" id="lastname_id" name="lastname" placeholder="Your last name goes here">
+          </fieldset>
+          <br>
+          <label for="age_id">Age:</label>
+          <input type="text" id = "age_id" name="age" required>
+          <br>
+          <input type="submit" value="Submit">
+        </form>
     </body>
 
 </html>
