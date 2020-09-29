@@ -3,13 +3,15 @@ function surprise(n) {
 }
 
 function getName() {
-    var name = prompt('Enter your name:')
+    let name = prompt('Enter your name:')
     return name;
 }
 
 function writeName() {
-    var name = getName()
-    document.write("<h1 id='myid'> Bonjour " + name + "</h1>")
-    var elt = document.getElementById("myid")
-    elt.style.position = "absolute"
+    let name = getName()
+    let prg = document.createElement("p");
+    let textNode = document.createTextNode("Bonjour " + name)
+    prg.appendChild(textNode)
+    let elt = document.getElementById("myid")
+    elt.appendChild(prg)
 }
