@@ -9,5 +9,7 @@ function getName() {
 
 function writeName() {
     var name = getName()
-    //document.write("Bonjour " + name)
+    document.write("<h1 id='myid'> Bonjour " + name + "</h1>")
+    var elt = document.getElementById("myid")
+    elt.style.position = "absolute"
 }
