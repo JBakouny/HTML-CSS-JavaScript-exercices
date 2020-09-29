@@ -1,4 +1,4 @@
-function surprise(n) {
+function surprise(n : number) {
     alert("Hello!" + n);
 }
 
