@@ -14,3 +14,5 @@ h3 , p {
 
 div.RedItalic h3:hover {background-color: cyan;}
 
+label, legend {font-style: italic; color: red; font-family: 'Lucida Sans', sans-serif;}
+

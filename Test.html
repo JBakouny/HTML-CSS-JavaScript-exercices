@@ -4,13 +4,13 @@
     <head>
         <title>My First Web Page - Avec changements</title>
 
-        <link rel="stylesheet" href="Test.css"/ type="text/css">
-        <script src="Test.js"> </script>
+        <link rel="stylesheet" href="Test.css" type="text/css">
+        <!--script src="Test.js"> </script-->
     </head>
 
-    <!-- la section body contient la page HTML comme on la visualise dans le browser -->
-    <body onload="writeName()">
-
+    <!-- la section body contient la page HTML comme on la visualise dans le browser 
+    onload="writeName()"-->
+    <body>
         <h1 class = "RedItalic Times"> The Big Title</h1>
 
         <div id="myid" class = "RedItalic" >
@@ -18,8 +18,8 @@
             <p>  Bonjour tout le monde, comment ca va ? </p>                
         </div>
         <hr/>
-        <p> Click <a href="Another.html">here</a> to another web page </p>
-        <h3 > The Mean Stack</h3>
+        <p> Click <a href="Another.html">here</a> to go to another web page </p>
+        <h3> The Mean Stack</h3>
         <img src="mean stack.png" width="300">
 
         <form action="http://localhost:3000/"
@@ -38,7 +38,7 @@
           <label for="age_id">Age:</label>
           <input type="text" id = "age_id" name="age" required>
           <br/>
-          <input type="submit" value="Submit">
+          <input type="submit" value="Go!">
         </form>
     </body>
 
