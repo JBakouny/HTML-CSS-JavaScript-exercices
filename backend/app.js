@@ -1,6 +1,6 @@
 const port = 3000
-var express = require('express')
-var bodyParser = require('body-parser')
+const express = require('express')
+const bodyParser = require('body-parser')
 
 var app = express()
 
@@ -8,11 +8,12 @@ var app = express()
 // var jsonParser = bodyParser.json()
 
 // create application/x-www-form-urlencoded parser
-var urlencodedParser = bodyParser.urlencoded({ extended: false })
+const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 // POST /login gets urlencoded bodies
 app.post('/', urlencodedParser, function (req, res) {
-  res.send("<h3>Received post request: </h3>" + JSON.stringify(req.body))
+  let jsonObj = req.body
+  res.send("<h3>Received post request: </h3>" + JSON.stringify(jsonObj))
 })
 
 // POST /api/users gets JSON bodies

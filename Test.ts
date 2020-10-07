@@ -1,14 +1,14 @@
-function surprise(n : number) {
+let surprise = (n : number) => {
     alert("Hello!" + n);
 }
 
-function getName() {
-    let name = prompt('Enter your name:')
+let getName = () : string => {
+    let name : string = prompt('Enter your name:')
     return name;
 }
 
-function writeName() {
-    let name = getName()
+let writeName = () : void => {
+    let name : string = getName()
     let prg = document.createElement("p");
     let textNode = document.createTextNode("Bonjour " + name)
     prg.appendChild(textNode)
